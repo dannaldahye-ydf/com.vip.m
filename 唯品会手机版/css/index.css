@@ -1,0 +1,94 @@
+header{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+}
+header .log{
+    font-size: 14px;
+    margin: 0 12px;
+    color: #93969b;
+    font-weight: 700;
+}
+header input{
+    height: 34px;
+    width: 312px;
+    border: 2px solid #edeeee;
+    border-radius: 17px;
+    padding-left: 12px;
+    background-color: #f3f4f5;
+}
+header .sort{
+    font-size: 22px;
+    margin: 0 12px;
+    color: #93969b;
+    font-weight: 700;
+}
+/*    主体 */
+main{
+    width: 100%;
+}
+/* 顶部导航 */
+.topnav{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.topnav a{
+    font-size: 14px;
+    color:#72757c;
+    padding:10px 0;
+    margin: 0 10px;
+}
+.topnav a:first-child{
+    font-weight: 700;
+    color: #e290c9;
+    border-bottom: 4px solid #e290c9;
+}
+/* brand */
+.brand{
+    width: 100%;
+    margin-top: 1px;
+}
+.brand img{
+    width: 100%;
+}
+/* sort */
+.sort{
+    width: 100%;
+    background-color: #f3f4f6;
+}
+.sort ul{
+    width: 100%;
+}
+.sort li{
+    width: 20%;
+    float: left;
+    background-color: #f3f4f6;
+    position: relative;
+}
+.sort a{
+width: 100%;
+}
+.sort img{
+    display: inline-block;
+width:100%;
+height: auto;
+border-radius: 50px;
+}
+.sort span{
+    position: absolute;
+    left: 25px;
+    bottom: 8px;
+    color: #535353;
+    font-size: 13px;
+    font-weight: 700;
+}
+.sort li:nth-last-child(-n+5) span{
+    position: absolute;
+    left:14px;
+    bottom: 8px;
+}
+
+
+
+
