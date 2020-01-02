@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>唯品会VIP特卖会：品牌特卖- 唯品会</title>
     <link rel="stylesheet" href="./lib/normalize.css">
     <link rel="stylesheet" href="./css/conmon.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./font/iconfont.css">
+    <script type="text/javascript">
+        // px与rem对应
+        var fontSizeFn = function () {
+            document.documentElement.style.fontSize = (document.documentElement.clientWidth * 100 / 750) + 'px';
+        };
+
+        var orientationFn = function () {
+            if (document.documentElement.clientWidth > document.documentElement.clientHeight) {
+                document.documentElement.className = 'landscape';
+            }
+            else {
+                document.documentElement.className = 'portrait';
+            }
+        };
+
+        fontSizeFn();
+        orientationFn();
+
+        window.addEventListener('resize', function () {
+            fontSizeFn();
+            orientationFn();
+        });
+    </script>
 </head>
+
 <body>
     <!-- 头部 -->
     <header>
-<a href="" class="log">登录</a>
-<input type="text" placeholder="大家都在搜：女士羽绒服">
-<a href="" class="sort"><i class="iconfont">&#xe601;</i></a>
+        <a href="" class="log">登录</a>
+        <div class="search">
+            <input type="text" placeholder="大家都在搜：女士羽绒服">
+        </div>
+        <a href="./sort.html" class="sort iconfont">&#xe601;</a>
     </header>
     <!-- 主体部分 -->
     <main>
@@ -29,9 +56,11 @@
             <a href="">家电</a>
             <a href="" class="iconfont">&#xe634;</a>
         </div>
+        <!-- brand -->
         <div class="brand">
             <img src="./img/main.jpg" alt="">
         </div>
+        <!-- 分类 -->
         <div class="sort">
             <ul>
                 <li><a href=""><img src="./img/sort-1.png" alt=""><span>女装</span></a></li>
@@ -46,6 +75,121 @@
                 <li><a href=""><img src="./img/sort-10.png" alt=""></a></li>
             </ul>
         </div>
+        <!-- anta特惠 -->
+        <div class="anta">
+            <a href=""><img src="./upload/anta-1.jpg" alt=""></a>
+            <ul>
+                <li><a href=""><img src="./upload/anta-2.jpg" alt=""></a></li>
+                <li><a href=""><img src="./upload/anta-3.jpg" alt=""></a></li>
+                <li><a href=""><img src="./upload/anta-4.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <!-- 快抢品牌 -->
+        <div class="rush b-img" style="position: relative;">
+            <img src="./upload/rush-1.png" alt="">
+            <ul>
+                <li><a href=""><img src="./upload/rush-2.jpg" alt=""><img src="./upload/rush-logo-1.png" alt=""><span>快抢价</span><small>&yen;55</small></a></li>
+                <li><a href=""><img src="./upload/rush-3.jpg" alt=""><img src="./upload/rush-logo-2.png" alt=""><span>快抢价</span><small>&yen;75</small></a></li>
+                <li><a href=""><img src="./upload/rush-4.jpg" alt=""><img src="./upload/rush-logo-3.png" alt=""><span>快抢价</span><small>&yen;109</small></a></li>
+                <li><a href=""><img src="./upload/rush-5.jpg" alt=""><img src="./upload/rush-logo-4.png" alt=""><span>快抢价</span><small>&yen;79</small></a></li>
+            </ul> 
+        </div>
+        <!-- 今日特卖 -->
+      <div class="special">
+          <h3>今日特卖 • 10点上新</h3>
+          <ul>
+              <li>
+                  <a href="">
+                      <img src="./upload/special-1.jpg" alt="" style="border-radius: 6px;">
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+                      <img src="./upload/special-2.jpg" alt="">
+                      <div class="special-product">
+                          <div class="special-product-top">
+                              <strong>润帛围巾限时狂降专场</strong>
+                              <span>剩22时</span>
+                          </div>
+                          <div class="special-product-bottom">
+                              <span>2.6</span>
+                              <p>折封顶  | 部分商品折上6.3折起</p>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+                      <img src="./upload/special-3.jpg" alt="">
+                      <div class="special-product">
+                        <div class="special-product-top">
+                            <strong>金鸡Goldrooster男女鞋-限时狂降专场</strong>
+                            <span>剩22时</span>
+                        </div>
+                        <div class="special-product-bottom">
+                            <span>3</span>
+                            <p>折封顶</p>
+                        </div>
+                    </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+                      <img src="./upload/special-4.jpg" alt="">
+                      <div class="special-product">
+                        <div class="special-product-top">
+                            <strong>KEDDO女鞋-限时狂降专场</strong>
+                            <span>剩22时</span>
+                        </div>
+                        <div class="special-product-bottom">
+                            <span>1.2</span>
+                            <p>折起	&nbsp;	&nbsp;|部分商品折上4.5折起</p>
+                        </div>
+                    </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+                      <img src="./upload/special-5.jpg" alt="">
+                      <div class="special-product">
+                        <div class="special-product-top">
+                            <strong>OZZEG女鞋-限时狂降专场</strong>
+                            <span>剩22时</span>
+                        </div>
+                        <div class="special-product-bottom">
+                            <span>4.5</span>
+                            <p>折封顶&nbsp;|部分商品折上5.9折起</p>
+                        </div>
+                    </div>
+                  </a>
+              </li>
+          </ul>
+      </div>
     </main>
+    <footer>
+<div class="nav">
+    <p>早10晚8，更多特卖，敬请期待</p>
+    <ul>
+        <li><a href=""><img src="./upload/images/bottom-nav_03.png" alt=""><span>即将上线</span></a></li>
+        <li><a href=""><img src="./upload/images/bottom-nav_05.png" alt=""><span>唯品团购</span></a></li>
+        <li><a href=""><img src="./upload/images/bottom-nav_07.png" alt=""><span>正品保证</span></a></li>
+        <li><a href=""><img src="./upload/images/bottom-nav_09.png" alt=""><span>唯品客服</span></a></li>
+    </ul>
+</div>
+<div class="app">
+    <span class="app-logo">唯品会</span>
+    <p>唯品会客户端，特卖抢不停</p>
+    <span class="app-down">下载</span>
+</div>
+<div class="about">
+    <div class="left"><a href="" >唯品会首页</a><a href="" >关于我们</a></div>
+    <div class="right"><a href="">登录</a><a href="">注册</a></div>
+</div>
+<div class="copyright">
+     <p>Copyright © 2008-2017 m.vip.com, ALL Rights Reserved  粤ICP备08114786号</p>
+    <p><img src="./upload/images/bottom-nav_16.png" alt="">粤公网安备  440210302000068号</p>
+</div>
+    </footer>
 </body>
+
 </html>

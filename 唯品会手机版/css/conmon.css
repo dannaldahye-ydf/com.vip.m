@@ -1,3 +1,8 @@
 *{
     box-sizing: border-box;
 }
+.b-img{
+    background-size:calc(263rem / 72) calc(255rem / 72);
+    background-repeat: no-repeat;
+    background-position:50% 50% ;
+}
