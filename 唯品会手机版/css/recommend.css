@@ -1,0 +1,138 @@
+header{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    overflow: hidden;
+    background-color: #fafaf9;
+}
+header .log{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    margin: 0 12px;
+    color: #93969b;
+    font-weight: 700;
+}
+header .search{
+    width: 100%;
+    height: 100%;
+    padding: 0 55px;
+}
+.search input{
+    width: 100%;
+    height: 34px;
+    border: 2px solid #edeeee;
+    border-radius: 17px;
+    background-color: #f3f4f5;
+    padding-left: 12px;
+}
+header .sort{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin: 0 12px;
+    color: #93969b;
+    font-weight: 700;
+    background-color: #fff;
+}
+/* 主体部分 */
+.selected{
+    width: 100%;
+}
+.selected .tittle{
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 16px;
+}
+.selected .tittle h3{
+    float: left;
+    font-size: 16px;
+    color: #9b9da2;
+}
+.selected .tittle a{
+    float: right;
+    font-size: 24px;
+    font-weight: 700;
+    color: #9b9da2;
+}
+.selected-content{
+    width: 100%;
+}
+.selected-content ul{
+    width: 100%;
+    overflow: hidden;
+
+}
+.selected-content li{
+    float: left;
+width: 25%;
+height: 84px;
+text-align: center;
+position: relative;
+border: 1px solid #e4e4e4;
+}
+.selected-content a{
+    width: 100%;
+}
+.selected-content img{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+}
+.selected-content span{
+    display: block;
+    margin-top: 50px;
+    color: #696d74;
+}
+.selected-content li:first-child span{
+    color: #d552ab;
+}
+/* more 更多推荐*/
+.more{
+    width: 100%; 
+    height: 350px;
+    border-bottom: 1px solid #e9e9e9;   
+}
+.more .tittle{
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 16px;
+}
+.more .tittle h3{
+    float: left;
+    font-size: 16px;
+    color: #9b9da2;
+}
+.more-content{
+    width: 100%;
+    
+}
+.more-content ul{
+    width: 100%;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+.more-content li{
+    float: left;
+    width: 25%;
+    padding-bottom: 12px;
+    padding-right: 12px;
+}
+.more-content a{
+    display:block;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #f3f4f5;
+    text-align: center;
+    font-size: 14px;
+    color: #8a8d93;
+}

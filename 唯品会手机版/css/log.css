@@ -1,0 +1,167 @@
+@media screen and (width: 320px) {
+    html {
+        font-size: calc(320px / 20);
+    }
+}
+
+
+@media screen and (width: 375px) {
+    html {
+        font-size: calc(375px / 20);
+    }
+}
+
+
+@media screen and (width: 414px) {
+    html {
+        font-size: calc(414px / 20);
+    }
+}
+ 
+header{
+    position: relative;
+    display: block;
+    width: 100%;
+    height:calc(510rem / 77) ;
+    background-repeat: no-repeat;
+    background-position:50% 50% ;
+    background-image:url(../img/b-log.jpg) ;
+}
+header .logo{
+width:calc(325rem / 77) ;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+header .logo span{
+    font-size:calc(95rem / 77) ;
+    color: #e3017e;
+    font-weight: 700;
+}
+header .logo strong{
+    font-size:calc(48rem / 77)  ;
+}
+header a{
+    position: absolute;
+    top: 12px;
+    right: 19px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.check {
+    display: inline-block;
+    vertical-align:middle;
+    appearance: none;    /* 取消自身块样式*/
+    font-weight: 500;
+    color:#44be3a;
+    background-color: #ffffff;
+    /* opacity:0; */
+  }
+  .check::after{        /* 伪元素样式即边框样式 */
+    display: block;
+    content:'';        /* 未选中样式 */
+    width:0.7rem;
+    height: 0.7rem;
+    text-align: center;
+    border:1.6px solid #44be3a;
+    border-radius: 2px;
+    background-color: #ffffff;
+  }
+  .check:checked::after{
+    content:'\2714';    /* 选中时样式，这里使用content编码--对号 */
+  }
+ .log{
+     width: 100%;
+ }
+ .phonenum{
+     width: 100%;
+     height: calc(154rem / 77);
+     line-height:calc(154rem / 77) ;
+     border-bottom: 2px solid #ececec;
+     padding-left:calc(43rem / 77) ;
+ }
+ .phonenum input{
+     border: none;
+     margin-left: calc(50rem / 77);
+ }
+ .code{
+    width: 100%;
+    height: calc(154rem / 77);
+    line-height:calc(154rem / 77) ;
+    border-bottom: 2px solid #ececec;
+    padding-left:calc(43rem / 77) ;
+ }
+ .code input{
+    border: none;
+    margin-left: calc(50rem / 77);
+ }
+ .code span{
+     float: right;
+     width:  calc(360rem / 77);
+     height: 100%;
+     border-left: 2px solid #ececec;
+     text-align: center;
+     font-size:calc(50rem / 77) ;
+     color: #98989f;
+ }
+ .log button{
+     width:calc(1465rem / 77) ;
+     height:calc(133rem / 77) ;
+     margin-top: calc(92rem / 77);
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%);
+     border: none;
+     background-color: #cccad2;
+     color: #ffffff;
+     border-radius:calc(70rem / 77);
+ }
+ .recet{
+     position: relative;
+     width: 100%;
+     margin-top:calc(266rem / 77) ;
+     padding-left: calc(40rem / 77);
+     padding-bottom: calc(193rem / 77) ;
+     border-bottom: 2px solid #ececec;
+ }
+ .recet small{
+     color: #98989f;
+     font-size:calc(34rem / 77) ;
+ }
+ .recet a{
+    font-size:calc(34rem / 77) ; 
+    color: #157efa;
+ }
+ .recet b{
+     position: absolute;
+     bottom: calc(-67rem / 77);
+     left: 50%;
+     transform: translatex(-50%);
+     display: block;
+     width: calc(95rem / 77);
+     height:calc(95rem / 77) ;
+     background-color: #ffffff;
+     color: #ececec;
+     font-size:calc(50rem / 77) ;
+     text-align: center;
+ }
+ .password{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+ .password span{
+     display: block;
+     width: calc(307rem / 77);
+     height: calc(141rem / 77);
+ color: #e4007f;
+     border:2px solid #e4007f;
+     border-radius:calc(70rem / 77);
+     text-align: center;
+     line-height:  calc(141rem / 77);
+     margin-top: calc(66rem / 77);
+     
+ }

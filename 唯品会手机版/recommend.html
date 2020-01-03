@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/normalize.css">
+    <link rel="stylesheet" href="./css/conmon.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/recommend.css">
+    <script type="text/javascript">
+        // px与rem对应
+        var fontSizeFn = function () {
+            document.documentElement.style.fontSize = (document.documentElement.clientWidth * 100 / 750) + 'px';
+        };
+
+        var orientationFn = function () {
+            if (document.documentElement.clientWidth > document.documentElement.clientHeight) {
+                document.documentElement.className = 'landscape';
+            }
+            else {
+                document.documentElement.className = 'portrait';
+            }
+        };
+
+        fontSizeFn();
+        orientationFn();
+
+        window.addEventListener('resize', function () {
+            fontSizeFn();
+            orientationFn();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="./log.html" class="log">登录</a>
+        <div class="search">
+            <input type="text" placeholder="大家都在搜：女士羽绒服">
+        </div>
+        <a href="./sort.html" class="sort iconfont">&#xe601;</a>
+    </header>
+    <main>
+        <div class="selected">
+            <div class="tittle">
+                <h3>精选推荐</h3>
+                <a href="./index.html">∧</a>
+            </div>
+            <div class="selected-content">
+                <ul>
+                    <li><a href=""><img src="./img/images/select_03.png" alt=""><span>今日推荐</span></a></li>
+                    <li><a href=""><img src="./img/images/select_05.png" alt=""><span>最后疯抢</span></a></li>
+                    <li><a href=""><img src="./img/images/select_07.png" alt=""><span>美妆</span></a></li>
+                    <li><a href=""><img src="./img/images/select_09.png" alt=""><span>母婴</span></a></li>
+                    <li><a href=""><img src="./img/images/select_15.png" alt=""><span>国际</span></a></li>
+                    <li><a href=""><img src="./img/images/select_16.png" alt=""><span>家电</span></a></li>
+                    <li><a href=""><img src="./img/images/select_17.png" alt=""><span>家具</span></a></li>
+                    <li><a href=""><img src="./img/images/select_18.png" alt=""><span>生活</span></a></li>
+                    <li><a href=""><img src="./img/images/select_23.png" alt=""><span>唯品  奢</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="more">
+            <div class="tittle">
+                <h3>更多推荐</h3>
+            </div>
+            <div class="more-content">
+               <ul>
+                   <li><a href="">女装</a></li>
+                   <li><a href="">男装</a></li>
+                   <li><a href="">鞋包</a></li>
+                   <li><a href="">童装童鞋</a></li>
+                   <li><a href="">面部护肤</a></li>
+                   <li><a href="">手表配饰</a></li>
+                   <li><a href="">内衣</a></li>
+                   <li><a href="">运动户外</a></li>
+                   <li><a href="">护肤彩妆</a></li>
+                   <li><a href="">手机数码</a></li>
+                   <li><a href="">国际</a></li>
+                   <li><a href="">母婴</a></li>
+                   <li><a href="">家居家纺</a></li>
+                   <li><a href="">大家电</a></li>
+                   <li><a href="">家具家装</a></li>
+                   <li><a href="">生活超市</a></li>
+                   <li><a href="">医药健康</a></li>
+                   <li><a href="">国际品牌</a></li>
+               </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
